@@ -7,10 +7,10 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="Donor Id">Donor Id</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="donorId" [(ngModel)]="donorId">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Delete</button>
+                    <button class="btn btn-success" (click)="readValues()">Delete</button>
                 </div>
             </div>
         </div>

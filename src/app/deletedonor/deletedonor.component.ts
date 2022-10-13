@@ -9,6 +9,16 @@ export class DeletedonorComponent implements OnInit {
 
   constructor() { }
 
+  donorId=""
+
+  readValues=()=>{
+    let data={
+      "donorId":this.donorId
+    }
+
+    console.log(data)
+  }
+
   ngOnInit(): void {
   }
 
