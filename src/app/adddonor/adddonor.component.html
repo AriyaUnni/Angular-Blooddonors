@@ -8,13 +8,13 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Name">Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <input type="text" class="form-control" placeholder="Enter your name" name="name" [(ngModel)]="name">
                   
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Blood group">Blood group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodgroup" [(ngModel)]="bloodgroup" id="" class="form-control">
                         <option value="Select">----select-----</option>
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
@@ -29,46 +29,46 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="DOB">DOB</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="dob"[(ngModel)]="dob" id="" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
                     <label for="Last donation date">Last donation date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="lastdonationdate"[(ngModel)]="lastdonationdate" id="" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Any previous diseases">Any previous diseases</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="anypreviousdiseases"[(ngModel)]="anypreviousdiseases">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Last vaccination date">Last vaccination date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="lastvaccinationdate"[(ngModel)]="lastvaccinationdate" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="Address">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" [(ngModel)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Pincode">Pincode</label>
-                    <input type="text" class="form-control" placeholder="Enter pincode">
+                    <input type="text" class="form-control" placeholder="Enter pincode" name="pincode" [(ngModel)]="pincode">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
                     
                     <label for="Mobile Number">Mobile Number</label>
-                    <input type="text" class="form-control" placeholder="Enter your mobile number">
+                    <input type="text" class="form-control" placeholder="Enter your mobile number" name="mobileno" [(ngModel)]="mobileno">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
 
                     <label for="Email Id">Email Id</label>
-                    <input type="email" name="" id="" class="form-control">
+                    <input type="email" name="email" id="" class="form-control" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
